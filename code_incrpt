@@ -19,10 +19,6 @@ def decrypt(text, key):
             decrypted_text += char
     return decrypted_text
 
-# Encrypted code
-#encrypted_code = "YourEncryptedCodeHere"  # Replace with your actual encrypted code
-#decrypted_code = decrypt(encrypted_code, key)  # Specify the correct key
-
 # Corrected and decrypted code
 tybony_inevnoyr = 100
 zl_qvpg = {'xrl1': 'inyhr1', 'xrl2': 'inyhr2', 'xrl3': 'inyhr3'}
