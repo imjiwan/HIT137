@@ -1,0 +1,30 @@
+# Define the string to be processed
+s = '56aAww1984sktr235270aYmn145ss785fsq31D0'
+
+# Separate the string into numbers and letters substrings
+numbers = ''.join(filter(str.isdigit, s))
+letters = ''.join(filter(str.isalpha, s))
+
+# Convert even numbers to ASCII code decimal values
+ascii_values = []
+for num in numbers:
+    if int(num) % 2 == 0:
+        ascii_values.append(str(ord(num)))
+    else:
+        ascii_values.append(num)
+ascii_numbers = ' '.join(ascii_values)
+
+# Convert upper-case letters to ASCII code decimal values
+ascii_letters = []
+for letter in letters:
+    if letter.isupper():
+        ascii_letters.append(str(ord(letter)))
+    else:
+        ascii_letters.append(letter)
+ascii_letters = ' '.join(ascii_letters)
+
+# Print the results
+print("Numbers:", numbers)
+print("Letters:", letters)
+print("Even Numbers as ASCII Codes:", ascii_numbers)
+print("Upper-case Letters as ASCII Codes:", ascii_letters)
